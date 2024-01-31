@@ -1,0 +1,158 @@
+/* Trying to keep the HTML fully validated through https://jigsaw.w3.org/css-validator/#validate_by_input */
+
+/* Global page settings (fonts etc) */
+
+/* global (:root) variables for colors */
+
+:root {
+        --orange: #ff7f50;
+        --visited: #722f37;
+        --main-background: linear-gradient(#D7E1EC, #FFFFFF);
+}
+
+/* end color variables */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.2em;
+    max-width: 100%;
+}
+
+/* END Global page settings */
+
+/* Navigation section */
+
+nav {
+    padding: 0.8em;
+    background-color: #2A2A2A;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden; /* Hides any <li>-elements going outside of the list */
+
+    color: green;
+    padding: 5px;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    padding: 1.2em 1.2em 1.2em 0.8em;
+    margin: 0;
+    transition: 0.5s;
+}
+
+li > a:visited {
+    color: var(--orange);
+    transition: 0.5s;
+}
+
+li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* END Navigation section */
+
+p {
+    font-size: 0.8em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Georgia', serif;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: coral;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--visited);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 5em 0 5em 0;
+    background: var(--main-background);
+}
+
+#hello {
+    margin-bottom: 25px;
+    border: solid red 2px;
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    border: solid blue 1px;
+}
+
+#projects > article {
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: whitesmoke;
+    max-width: 25em;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+}
+
+article > img {
+    width: 100%;
+    display: flex;
+    margin-top: 0px;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+#contact, footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    background-color: #000000;
+    color: white;
+}
