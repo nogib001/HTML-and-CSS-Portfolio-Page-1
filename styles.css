@@ -9,6 +9,7 @@
         --visited: #722f37;
         --main-background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);;
         --content-background: rgba(245, 245, 245, 0.8);
+        --buttoncolor: rgba(255, 189, 3, 0.9);
 }
 
 /* end color variables */
@@ -67,7 +68,7 @@ li a:hover {
 /* END Navigation section */
 
 h1 {
-    font-size: 5em;
+    font-size: 3em;
 }
 
 h2, h3, h4, h5, h6 {
@@ -82,8 +83,7 @@ p {
 
 a {
     text-decoration: none;
-    color: coral;
-
+    color: var(--orange);
 }
 
 a:hover {
@@ -104,14 +104,10 @@ main {
     background: var(--main-background);
 }
 
-#hello {
-    margin-bottom: 25px;
-}
-
 .content-box {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2em;
 }
 
 #first {
@@ -119,10 +115,11 @@ main {
     background-size: cover;
     overflow: hidden;
     width: 30em;
-    height: 20em;
+    height: 28em;
     max-width: 100%;
     max-height: 100%; /* box settings ends here */
     position: relative;
+    border-radius: 0.5em;
 }
 
 #second {
@@ -130,10 +127,11 @@ main {
     background-size: cover;
     overflow: hidden;
     width: 30em;
-    height: 20em;
+    height: 28em;
     max-width: 100%;
     max-height: 100%; /* box settings ends here */
     position: relative;
+    border-radius: 0.5em;
 }
 
 #third {
@@ -141,10 +139,11 @@ main {
     background-size: cover;
     overflow: hidden;
     width: 30em;
-    height: 20em;
+    height: 28em;
     max-width: 100%;
     max-height: 100%; /* box settings ends here */
     position: relative;
+    border-radius: 0.5em;
 }
 
 
@@ -157,14 +156,37 @@ main {
     padding-top: 1em;
 }
 
+button {
+    margin-top: 1em;
+    padding: 10px;
+    max-width: 15em;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--buttoncolor);
+}
+
+button:hover {
+    transition: 1s;
+}
+
 #contact, footer {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-items: center;
     flex-direction: column;
-    padding: 25px;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+    align-items: left;
+    padding: 1em;
     background-color: #000000;
     color: white;
+}
+
+#copyright {
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+#top > a:hover {
+    text-decoration: none;
 }
